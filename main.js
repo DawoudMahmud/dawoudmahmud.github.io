@@ -1,14 +1,17 @@
-var words = ["Determined.", "Developer.", "Passionate."];
-var i = 0;
+const rotatingWords = ["Software Engineer.", "Cloud Builder.", "Systems Thinker."];
+let rotatingWordIndex = 0;
 
-function wordCycler() {
-    setInterval(function () {
-        var word = words[i];
-        $("#random-word").fadeOut('slow', function () {
-            $(this).html(word).fadeIn("slow");
-        });
-        i = (i+1)%3
-    }, 3000);
+function startWordCycler() {
+	const target = document.querySelector("[data-random-word]");
+
+	if (!target) {
+		return;
+	}
+
+	window.setInterval(() => {
+		rotatingWordIndex = (rotatingWordIndex + 1) % rotatingWords.length;
+		target.textContent = rotatingWords[rotatingWordIndex];
+	}, 2600);
 }
 
-wordCycler();
+window.addEventListener("DOMContentLoaded", startWordCycler);

@@ -1,0 +1,172 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifdefined\pdfgentounicode
+ \input{glyphtounicode}
+\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+ \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\ifdefined\pdfgentounicode
+ \pdfgentounicode=1
+\fi
+
+\newcommand{\resumeItem}[1]{
+ \item\small{{#1 \vspace{-1.5pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+ \vspace{-1pt}\item
+ \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+ \textbf{#1} & #2 \\
+ \textit{\small#3} & \textit{\small #4} \\
+ \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeadingURL}[3]{
+ \item
+ \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+ \small#1 & #2 \\
+ \end{tabular*}\vspace{-3pt}\\
+ \hspace{0.05in}{\small\href{#3}{\underline{#3}}}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeadingLink}[4]{
+ \item
+ \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+ \small#1 & #2 \\
+ \end{tabular*}\vspace{-3pt}\\
+ \hspace{0.05in}{\small\href{#4}{\underline{#3}}}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+ \item
+ \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+ \small#1 & #2 \\
+ \end{tabular*}\vspace{-6pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=0pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+\begin{document}
+
+\begin{center}
+ \textbf{\Huge \scshape Dawoud Mahmud} \\ \vspace{1pt}
+ \small 510-505-4624 $|$ \href{mailto:dawoud.mahmud@gmail.com}{\underline{dawoud.mahmud@gmail.com}} $|$
+ \href{https://linkedin.com/in/dawoud-mahmud}{\underline{www.linkedin.com/in/dawoud-mahmud/}} $|$
+ \href{https://github.com/DawoudMahmud}{\underline{github.com/DawoudMahmud}}
+\end{center}
+
+\section{Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+ \small{\item{
+Customer-facing full-stack engineer with CS/ML training, software QA experience, AI workflow tooling, and hands-on product development. Strong fit for forward-deployed engineering: translating ambiguous customer workflows into technical plans, building data-backed features and integrations, documenting launches, debugging live issues, and communicating clearly with both users and engineers.
+ }}
+ \end{itemize}
+
+\section{Education}
+ \resumeSubHeadingListStart
+ \resumeSubheading
+ {Georgia Institute of Technology}{Atlanta, GA}
+ {M.S. in Computer Science, Machine Learning (GPA: 3.83)}{Aug. 2024 -- Present}
+ \resumeSubheading
+ {University of California, Irvine}{Irvine, CA}
+ {B.S. in Computer Science, Minor in Mathematics}{Graduated 2022}
+ \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+ \small{\item{
+ \textbf{Languages}{: Python, Go, Java, JavaScript, TypeScript, Swift, C, C++, SQL, Bash} \\
+ \textbf{Full-Stack}{: React, Next.js, Node.js, REST APIs, Spring Boot, Convex, Clerk, Stripe, Postman} \\
+ \textbf{Cloud/Data}{: AWS Certified Cloud Practitioner, Docker, Terraform, CI/CD, Vercel, MySQL, DynamoDB, Pandas, NumPy} \\
+ \textbf{AI/Automation}{: Claude Code, Codex, OpenClaw, Claude Opus, LLM APIs, Prompt/Context Design, Workflow Automation} \\
+ \textbf{Practices}{: Technical Troubleshooting, Customer Communication, QA, Documentation, Git, Linux/Unix, Agile/Scrum}
+ }}
+ \end{itemize}
+
+\section{Experience}
+ \resumeSubHeadingListStart
+
+ \resumeSubheading
+ {Specialist}{Aug. 2024 -- Present}
+ {Apple, Inc.}{Santa Clara, CA}
+ \resumeItemListStart
+ \resumeItem{Resolved technical issues for 20+ customers daily across hardware, software, account, device, and workflow problems; translated ambiguous root causes into clear, customer-safe next steps.}
+ \resumeItem{Drove \$84K+ in revenue by discovering business needs, recommending technical solutions, and onboarding 72+ small business clients through product selection, setup guidance, and adoption support.}
+ \resumeItemListEnd
+
+ \resumeSubheading
+ {Software QA Engineer Intern}{May 2021 -- Sep. 2021}
+ {Extron Inc.}{Milpitas, CA}
+ \resumeItemListStart
+ \resumeItem{Drove a 75\% migration of a legacy shipping platform by documenting target architecture, validating workflows, and defining the next-phase technical roadmap.}
+ \resumeItem{Executed 80+ user journey tests per sprint to validate business logic, reproduce defects, document edge cases, and improve release reliability across shipping workflows.}
+ \resumeItemListEnd
+
+ \resumeSubHeadingListEnd
+
+\section{Projects}
+ \resumeSubHeadingListStart
+
+ \resumeProjectHeadingLink
+ {\textbf{Mehndi Market} $|$ \emph{Next.js, TypeScript, Convex, Clerk, Vercel, Stripe} $|$ \emph{In Progress}}{}
+ {Preview deployment}
+ {https://mehndimarket-i67kxg1pm-mehndimarket.vercel.app?x-vercel-protection-bypass=QPPVMEod33V13dhxj9e0nnhBwCoepEdI\&x-vercel-set-bypass-cookie=true}
+ \resumeItemListStart
+ \resumeItem{Building an early-stage full-stack marketplace with authenticated user flows, seller onboarding, listing discovery, and a curated storefront.}
+ \resumeItem{Implemented Convex schema, queries, mutations, validation, active-listing indexes, seller metadata, price fields, and location support for data-backed marketplace workflows.}
+ \resumeItem{Own roadmap across seller setup, buyer discovery, payments, and trust workflows, translating messy marketplace requirements into implementation-ready product specs.}
+ \resumeItemListEnd
+
+ \resumeProjectHeadingURL
+ {\textbf{Terraform Provider Mikrotik} $|$ \emph{Go, Terraform, RouterOS, Infrastructure-as-Code}}{}
+ {https://github.com/ddelnano/terraform-provider-mikrotik/pull/176}
+ \resumeItemListStart
+ \resumeItem{Implemented Terraform resource logic for WireGuard VPN interfaces and peers in Go, including provider schemas, CRUD operations, RouterOS command mappings, and invalid-resource error handling.}
+ \resumeItem{Collaborated with open-source maintainers on test coverage, acceptance criteria, review feedback, and release readiness for production infrastructure automation.}
+ \resumeItemListEnd
+
+ \resumeProjectHeading
+ {\textbf{AI Workflow Automation} $|$ \emph{Claude Code, Codex, OpenClaw, Python, Shell}}{}
+ \resumeItemListStart
+ \resumeItem{Built repeatable AI-assisted workflows for research, document generation, implementation planning, debugging, QA, and file-system automation.}
+ \resumeItem{Designed reusable prompts, task instructions, output checks, and human review loops to keep long-running AI workflows reliable across ambiguous tasks.}
+ \resumeItemListEnd
+
+ \resumeSubHeadingListEnd
+
+\end{document}
